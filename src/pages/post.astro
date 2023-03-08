@@ -1,0 +1,29 @@
+---
+const pageTitle = "Post - IamLucaM."
+
+const allPosts = await Astro.glob('../pages/posts/*.md*');
+
+import Layout from '../layouts/Layout.astro';
+import MainTitle from '../components/MainTitle.astro';
+import Hero from '../components/Hero.astro';
+import TitleSection from '../components/TitleSection.astro'
+import PostCard from '../components/PostCard.astro'
+---
+
+<Layout title={pageTitle}>
+	<main>
+    <TitleSection title="Post" image="/img/luca2.png" imageAlt="Post di Luca Mattioli" description="Post di Luca Mattioli" />
+    <div>
+      {allPosts.length > 0 && (allPosts.map((post) => <PostCard href={post.url}, postImage={post.frontmatter.image.url}, postImageAlt={post.frontmatter.image.alt}, postTitle={post.frontmatter.title}, postDescription={post.frontmatter.description} />))}
+    </div>
+	</main>
+</Layout>
+
+<style>
+	main {
+		margin: auto;
+		padding: 1.5rem;
+		max-width: 100vw;
+	}
+</style>
+

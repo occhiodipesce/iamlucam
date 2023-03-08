@@ -1,0 +1,26 @@
+---
+const pageTitle = "Privacy Policy - IamLucaM."
+
+import Layout from '../layouts/Layout.astro';
+import MainTitle from '../components/MainTitle.astro';
+import Hero from '../components/Hero.astro';
+import Card from '../components/Card.astro';
+import Progetti from '../components/HomeProgetti.astro'
+import Post from '../components/HomePost.astro'
+---
+
+<Layout title={pageTitle}>
+	<main>
+    <Hero />
+    <p>Questo sito web non utilizza cookies a scopo di profilazione o di marketing. Non vi sono installati strumenti di analisi.</p>
+    <p>Il sito utilizza font da Fontsource.</p>
+	</main>
+</Layout>
+
+<style>
+	main {
+		margin: auto;
+		padding: 1.5rem;
+		max-width: 100vw;
+	}
+</style>

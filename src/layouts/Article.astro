@@ -1,0 +1,90 @@
+---
+import Layout from '../layouts/Layout.astro'
+import PostTitleSection from '../components/PostTitleSection.astro'
+
+const { frontmatter } = Astro.props;
+
+const dateOptions: object = {
+	year: "numeric",
+	month: "long",
+	day: "numeric",
+};
+
+const formattedPublishDate = new Date(frontmatter.pubDate).toLocaleDateString(
+	"it",
+	dateOptions
+);
+
+---
+
+<Layout title={frontmatter.title + " - IamLucaM"}>
+    <PostTitleSection title={frontmatter.title} image={frontmatter.image.url} imageAlt={frontmatter.image.alt} description={frontmatter.description} date={formattedPublishDate}/>
+
+    <div class="container px-4 py-8 article mx-auto">
+      <slot />
+    </div>  
+
+</Layout>
+
+<style is:global>
+  .article {
+    font-size: 1rem;
+    line-height: 1.5rem;
+    text-align: justify;
+  }
+  .article h2, h3, h4, h5, h6 {
+    color: #191919;
+    font-weight: bold;
+    margin-top: 35px;
+  }
+  .article h2 {
+    font-size: 1.5rem;
+    line-height: 2rem;
+  }
+  .article h3 {
+    font-size: 1.25rem;
+    line-height: 1.75rem;
+  }
+
+  .article h4 {
+    font-size: 1.125rem;
+    line-height: 1.75rem;
+  }
+
+  .article h5 {
+    font-size: 1.1 rem;
+    line-height: 1.65rem;
+  }
+
+  .article h6 {
+    font-size: 1.05rem;
+    line-height: 1.65rem;
+  }
+  .article p {
+    margin-top: 10px;
+    font-family: 'Inter', Verdana, Arial, Georgia, serif;
+  }
+
+  .article ul {
+    margin-left: 1rem;
+    list-style-type: circle;
+  }
+  .article ol {
+    margin: 1rem 2.5rem;
+    list-style-type: decimal;
+  }
+  .article img {
+    max-width: 75%;
+    height: auto;
+    margin: 25px auto;
+    border-radius: 0.5rem;
+  }
+  .article a {
+    color: #8f8aac;
+    text-decoration: underline;
+  }
+  .article a:hover {
+    color: #ac8a8c;
+    text-decoration: none;
+  }
+</style>

@@ -1,0 +1,16 @@
+---
+export interface Props {
+	description: string;
+}
+
+const { description } = Astro.props;
+---
+
+<p class="col-span-12 text-center mt-5 mb-10">{description}</p>
+
+<style>
+  p {
+    color: --kesseki;
+    font-size: 14px;
+  }
+</style>

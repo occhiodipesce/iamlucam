@@ -1,0 +1,32 @@
+---
+export interface Props {
+  title: string;
+  image: string;
+  imageAlt: string;
+  description: string;
+}
+
+const { title, image, imageAlt, description } = Astro.props;
+
+import PrimaryDescription from '../components/PrimaryDescription.astro'
+---
+
+<section>
+    <div class="grid max-w-screen-xl items-center px-4 py-8 mx-auto grid-cols-12">
+        <div class="mr-0 lg:mt-0 col-span-6 place-self-end">
+            <img src={image} alt={imageAlt} class="h-96 object-cover"/>
+        </div>                
+        <div class="ml-5 col-span-6 pr-10">
+            <h2 class="text-3xl md:text-5xl hero-title">{title}</h2>
+        </div>
+    </div>
+    <div class="mt-10">
+     <PrimaryDescription description={description}/> 
+    </div>
+</section>
+
+<style>
+  .hero-title {
+    color: --yoru;
+  }
+</style>

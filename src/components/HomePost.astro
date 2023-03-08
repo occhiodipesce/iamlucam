@@ -1,0 +1,12 @@
+---
+import Layout from '../layouts/Section.astro'
+import PostCard from '../components/PostCard.astro'
+
+const posts = await Astro.glob('../pages/posts/*.md');
+---
+
+<Layout title="Post" href="/post/">
+
+  {posts.length > 0 && (posts.slice(0, 4).map((post) => <PostCard href={post.url}, postImage={post.frontmatter.image.url}, postImageAlt={post.frontmatter.image.alt}, postTitle={post.frontmatter.title}, postDescription={post.frontmatter.description} />))}
+
+</Layout>

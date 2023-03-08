@@ -1,0 +1,57 @@
+---
+export interface Props {
+	title: string;
+}
+
+const { title } = Astro.props;
+
+
+import Navbar from '../components/Navbar.astro'
+import Footer from '../components/Footer.astro'
+---
+
+<!DOCTYPE html>
+<html lang="it">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width" />
+		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+		<meta name="generator" content={Astro.generator} />
+		<title>{title}</title>
+    <link href="/css/prism-one-dark.css" rel="stylesheet" />
+	</head>
+  <body>
+		<Navbar />
+		<slot />
+    <Footer />
+	</body>
+</html>
+<style is:global>
+  import @fontsource/jetbrains-mono
+  import @fontsource/inter
+  :root {
+    --yuki: #f0f0f0;
+    --yoru: #0f0f0f;
+    --kesseki: #191919;
+    --iwa: #262626;
+    --tetsu: #393939;
+    --shinkai: #8a98ac;
+		--accent: 124, 58, 237;
+		--accent-gradient: linear-gradient(45deg, rgb(var(--accent)), #da62c4 30%, white 60%);
+	}
+	html {
+		font-family: "JetBrains Mono", monospace;
+		background-color: --yuki;
+	}
+	code {
+		font-family: Menlo, Monaco, Lucida Console, Liberation Mono, DejaVu Sans Mono,
+			Bitstream Vera Sans Mono, Courier New, monospace;
+	}
+  pre {
+    margin: 1rem 2rem 2rem;
+    background-color: --iwa;
+    color: --yuki;
+    padding: .5rem .5rem .7rem;
+    border-radius: .4rem;
+  }
+</style>

@@ -1,0 +1,28 @@
+---
+export interface Props {
+	title: string;
+  href: strin;
+}
+
+const { title, href } = Astro.props;
+
+---
+
+<section class="p-3 w-100 md:w-75 mb-10 mt-5">
+  <div>
+    <h2 class="section-title text-2xl md:text-3xl lg:text-4xl font-semibold">{title}</h2>
+  </div>
+
+  <slot />
+
+  <div class="container w-100 flex justify-end">
+    <a href={href} class="text-base font-bold">...vedi altro</a>
+  </div>
+  
+</section>
+
+<style>
+  .section-title{
+    color: --kesseki;
+  }
+</style>
