@@ -1,6 +1,6 @@
 ---
 title: 'Doc FGA'
-pubDate: 2023-03-05
+pubDate: 2023-03-08
 description: 'Guida rivolta agli autori del sito web festivalgiovaniappennino.it'
 image:
     url: '/img/projects/fgadocs/fga.jpg'
@@ -8,7 +8,7 @@ image:
 layout: ../../layouts/Article.astro
 ---
 > _Foto di <a href="https://unsplash.com/@kanhaiyasharma?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText" target="_blank" rel="noreferrer noopener nofollow">Kanhaiya Sharma</a>_
--
+
 ### Gestione del contenuto
 
 #### Gestione del contenuto tramite DecapCMS
@@ -43,13 +43,13 @@ In questa sezione inserire il titolo dell'articolo.
 
 Data di pubblicazione dell'articolo.
 
-È possibile inserire una data arbitraria e, comunque, la scelta della data non ha effetti sulla pubblicazione o meno del articolo. Gli unici effetti riguardano la data indicata nell'articolo stesso e la posizione dell'articolo all'interno di liste ordinate per data di pubblicazione.
+Data indicata nell'articolo e utilizzata per ordinare gli articoli nelle liste. Non può essere utilizzata per programmare la pubblicazione.
 
 ##### Immagine di copertina
 
 Immagine di copertina dell'articolo.
 
-Può essere caricata direttamente o inserita tramite link. Sarebbe preferibile, quando possibile, caricare l'immagine su <a href="https://cloudinary.com" target="_blank" rel="nofollow noopener noreferrer">Cloudinary</a>, utilizzando le credenziali dello staff del Festival, e utilizzare quindi il link.
+Può essere caricata direttamente o inserita tramite link. Sarebbe preferibile, quando possibile, caricare l'immagine su <a href="https://cloudinary.com" target="_blank" rel="nofollow noopener noreferrer">Cloudinary</a> (utilizzando le credenziali dello staff del Festival) e utilizzare quindi il link.
 
 ##### Didascalia immagine di copertina
 
@@ -61,13 +61,13 @@ Utilizzata per una migliore accessibilità del sito e per motivazioni di SEO.
 
 Descrizione e/o estratto dell'articolo.
 
-Utilizzato per la descrizione nelle schede degli articoli presenti sul sito e nelle schede riguardanti l'articolo nei motori di ricerca.
+Utilizzato per la descrizione nelle schede degli articoli presenti sul sito, dai motori di ricerca e dai social network.
 
 ##### Immagine autore
 
 Immagine dell'autore.
 
-Presente vicino al nome dell'autore nella pagina dell'articolo. Anche in questo caso sarebbe l'immagine può essere caricata direttamente o tramite link (con preferenza per questa seconda modalità).
+Presente vicino al nome dell'autore nella pagina dell'articolo. Anche in questo caso l'immagine può essere caricata direttamente o tramite link (con preferenza per questa seconda modalità).
 
 ##### Tags
 
@@ -79,10 +79,10 @@ Bisogna aggiungere un tag per ogni campo presente in questa sezione ed è possib
 
 ##### Body
 
-Testo completo dell'articolo.
+Testo dell'articolo.
 
 In questa sezione è possibile inserire il testo dell'articolo utilizzando l'editor _Rich Text_ che permette la formattazione attraverso l'utilizzo di strumenti classici presenti sulla barra, oppure attraverso l'editor _Markdown_, che permette di utilizzare l'omonimo linguaggio di markup.
 
 Utilizzando l'editor _Rich Text_ è possibile inserire intestazioni utilizzando il simbolo _H_, utilizzando _Heading 2_ per l'intestazione principale e da 3 in poi per il livelli minori.
 
-Inserendo un'immagine (è possibile farlo con il tasto _+_ presente sulla barra) appare oltre al campo dell'immagine (di nuovo si consiglia di utilizzare <a href="https://cloudinary.com" target="_blank" rel="nofollow noopener noreferrer">Cloudinary</a>, il campo _ALT TEXT_ nel quale inserire una didascalia per l'immagine (non visibile sul sito ma utilizzata per migliorare l'accessibilità), e un campo per il titolo (visibile, nei browser che supportano questa modalità, al passaggio del mouse sopra l'immagine).
+Inserendo un'immagine (è possibile farlo con il tasto _+_ presente sulla barra) appare oltre al campo dell'immagine (di nuovo si consiglia di utilizzare <a href="https://cloudinary.com" target="_blank" rel="nofollow noopener noreferrer">Cloudinary</a>), il campo _ALT TEXT_ nel quale inserire una didascalia per l'immagine (non visibile sul sito ma utilizzata per migliorare l'accessibilità), e un campo per il titolo (visibile, nei browser che supportano questa modalità, al passaggio del mouse sopra l'immagine).
