@@ -7,15 +7,17 @@ image:
     alt: 'Copertina Documentazione festivalgiovaniappennino.it'
 layout: ../../layouts/Article.astro
 ---
-> _Foto di <a href="https://unsplash.com/@kanhaiyasharma?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText" target="blank norefferer noopener">Kanhaiya Sharma</a>_
-
+> _Foto di <a href="https://unsplash.com/@kanhaiyasharma?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText" target="_blank" rel="noreferrer noopener nofollow">Kanhaiya Sharma</a>_
+-
 ### Gestione del contenuto
 
-#### Gestione del contenuto tramite NetlifyCMS
+#### Gestione del contenuto tramite DecapCMS
 
-Il sito web, attualmente, implementa [NetlifyCMS](netlifycms.org/) ovvero un sistema di gestione del contenuto, che offre un'interfaccia semplice per creare, cancellare e modificare gli articoli e gli avvisi presenti sul sito.
+Il sito web, attualmente, implementa <a href="https://decapcms.org" target="_blank" rel="nofollow noopener noreferrer">DecapCMS</a> ovvero un sistema di gestione del contenuto, che offre un'interfaccia semplice per creare, cancellare e modificare gli articoli e gli avvisi presenti sul sito.
 
-Per accedere al CMS è sufficiente seguire il link [festivalgiovaniappennino.it/admin/](https://festivalgiovaniappennino.it/admin/) e quindi effettuare l'accesso con le proprie credenziali.
+> _DecapCMS è un rebrand di NetlifyCMS, quindi è possibile trovare anche questo secondo nome in varie parti dell'interfaccia._
+
+Per accedere al CMS è sufficiente seguire il link <a href="https://festivalgiovaniappennino.it/admin/" target="_blank" rel="noopener">festivalgiovaniappennino.it/admin/</a> e quindi effettuare l'accesso con le proprie credenziali.
 
 Nel caso in cui non si disponga delle credenziali di accesso, è necessario un invito per poter effettuare la registrazione.
 
@@ -29,7 +31,7 @@ Cliccando sul tasto _New Blog_ è possibile creare un nuovo articolo, mentre cli
 
 Una volta aperta la pagina di modifica di un articolo, l'interfaccia presenta sulla sinistra dei campi nei quali inserire il contenuto e sulla destra un'antemprima dell'articolo, che può essere chiusa (o aperta) cliccando sull'icona a forma di occhio presente in alto a destra.
 
-> _N.B.: l'antemprima non è indicativa dell'effettiva formattazione presente sul sito_
+> _N.B.: l'antemprima non è indicativa dell'effettiva formattazione presente sul sito._
 
 A seguire le istruzioni per ogni campo che è possibile compilare.
 
@@ -47,7 +49,7 @@ Data di pubblicazione dell'articolo.
 
 Immagine di copertina dell'articolo.
 
-Può essere caricata direttamente o inserita tramite link. Sarebbe preferibile, quando possibile, caricare l'immagine su [Cloudinary](https://cloudinary.com/), utilizzando le credenziali dello staff del Festival, e utilizzare quindi il link.
+Può essere caricata direttamente o inserita tramite link. Sarebbe preferibile, quando possibile, caricare l'immagine su <a href="https://cloudinary.com" target="_blank" rel="nofollow noopener noreferrer">Cloudinary</a>, utilizzando le credenziali dello staff del Festival, e utilizzare quindi il link.
 
 ##### Didascalia immagine di copertina
 
@@ -83,4 +85,4 @@ In questa sezione è possibile inserire il testo dell'articolo utilizzando l'edi
 
 Utilizzando l'editor _Rich Text_ è possibile inserire intestazioni utilizzando il simbolo _H_, utilizzando _Heading 2_ per l'intestazione principale e da 3 in poi per il livelli minori.
 
-Inserendo un'immagine (è possibile farlo con il tasto _+_ presente sulla barra) appare oltre al campo dell'immagine (di nuovo si consiglia di utilizzare [Cloudinary](https://cloudinary.com)), il campo _ALT TEXT_ nel quale inserire una didascalia per l'immagine (non visibile sul sito ma utilizzata per migliorare l'accessibilità), e un campo per il titolo (visibile, nei browser che supportano questa modalità, al passaggio del mouse sopra l'immagine).
+Inserendo un'immagine (è possibile farlo con il tasto _+_ presente sulla barra) appare oltre al campo dell'immagine (di nuovo si consiglia di utilizzare <a href="https://cloudinary.com" target="_blank" rel="nofollow noopener noreferrer">Cloudinary</a>, il campo _ALT TEXT_ nel quale inserire una didascalia per l'immagine (non visibile sul sito ma utilizzata per migliorare l'accessibilità), e un campo per il titolo (visibile, nei browser che supportano questa modalità, al passaggio del mouse sopra l'immagine).

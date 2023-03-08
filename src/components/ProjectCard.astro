@@ -12,13 +12,13 @@ const { href, projectImage, projectImageAlt, projectTitle, projectDescription } 
 
 <div class="col-span-12 md:col-span-6 flex flex-col">
   <div class="">
-    <a href={href}>
+    <a href={href} target="_blank" rel="noopener">
       <img src={projectImage} alt={projectImageAlt} class="object-cover h-36 w-full rounded-xl hover:rounded hover:scale-105 ease-in duration-300" />
     </a>
   </div>
   <div class="mt-5 mb-10 flex flex-col">
     <div>
-      <a class='group transition-all duration-300 ease-in-out text-base font-bold text-[#191919] mb-5' href={href}>
+      <a class='group transition-all duration-300 ease-in-out text-base font-bold text-[#191919] mb-5' href={href} target="_blank" rel="noopener">
         <span class='bg-left-bottom bg-gradient-to-r from-[#191919] to-[#191919] bg-[length:0%_2px] bg-no-repeat group-hover:bg-[length:100%_2px] transition-all duration-500 ease-out'>
           {projectTitle}
         </span>

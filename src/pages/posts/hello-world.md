@@ -9,6 +9,6 @@ image:
 layout: ../../layouts/Article.astro
 ---
 
-> _Foto di <a href="https://unsplash.com/@pramodtiwari?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Pramod Tiwari</a>_
+> _Foto di <a href="https://unsplash.com/@pramodtiwari?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText" target="_blank" rel="norefferer noopener nofollow">Pramod Tiwari</a>_
 
 Ciao Mondo!
