@@ -75,7 +75,7 @@ Tag dell'articolo.
 
 Utilizzati per questioni di indicizzazione all'interno del sito. Sono presenti a fondo articolo e permettono la creazione di pagine che raccolgono gli articoli in base ai singoli tag. Non utilizzare apostrofi o altri simboli, in quanto potrebbero creare problemi nella creazione degli ```url``` delle pagine relative ai tag.
 
-Bisogna aggiungere un tag per ogni campo presente in questa sezione ed è possibile farlo cliccando sul tasto _add tags +_.
+È possibile aggiungere un **singolo** tag per ogni modulo presente in questa sezione ed è possibile aggiungerne di più cliccando sul tasto _add tags +_.
 
 ##### Body
 
