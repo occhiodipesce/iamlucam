@@ -17,7 +17,7 @@ const formattedPublishDate = new Date(frontmatter.pubDate).toLocaleDateString(
 
 ---
 
-<Layout title={frontmatter.title + " - IamLucaM"}>
+<Layout title={frontmatter.title + " - IamLucaM"} description={frontmatter.description}>
     <PostTitleSection title={frontmatter.title} image={frontmatter.image.url} imageAlt={frontmatter.image.alt} description={frontmatter.description} date={formattedPublishDate}/>
 
     <div class="container px-4 py-8 article mx-auto">
