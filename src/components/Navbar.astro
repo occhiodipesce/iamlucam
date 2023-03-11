@@ -18,8 +18,8 @@ import MainTitle from '../components/MainTitle.astro'
                     </svg>
                 </button>
                 <div class="hidden space-x-6 lg:inline-block">
-                    <a href="/progetti/" class="object-title">Progetti</a>
-                    <a href="/post/" class="object-title">Post</a>
+                    <a href="/projects/" class="object-title">Progetti</a>
+                    <a href="/blog/" class="object-title">Blog</a>
                     <!--<a href="#" class="object-title">Curriculum</a>-->
                 </div>
 
@@ -29,8 +29,8 @@ import MainTitle from '../components/MainTitle.astro'
                     <div class="fixed left-0 w-full h-48 p-5 bg-white rounded-lg shadow-xl top-16" x-show="isOpen"
                         @click.away=" isOpen = false">
                         <div class="flex flex-col space-y-6">
-                            <a href="/progetti/" class="object-title">Progetti</a>
-                            <a href="/post/" class="object-title">Post</a>
+                            <a href="/projects/" class="object-title">Progetti</a>
+                            <a href="/blog/" class="object-title">Blog</a>
                             <!--<a href="#" class="object-title">Curriculum</a>-->
                         </div>
                     </div>
@@ -45,6 +45,6 @@ import MainTitle from '../components/MainTitle.astro'
   .object-title {
     font-size: 16px;
     font-weight: 800;
-    color: --kesseki;
+    color: #191919;
   }
 </style>

@@ -3,7 +3,7 @@ title: 'Doc FGA'
 pubDate: 2023-03-08
 description: 'Guida rivolta agli autori del sito web festivalgiovaniappennino.it'
 image:
-    url: '/img/projects/fgadocs/fga.jpg'
+    url: 'https://res.cloudinary.com/dcsr1ibs2/image/upload/c_scale,w_auto/dpr_auto/q_auto/f_auto/v1678547019/IamLucaM/projects/fgadocs/fgadocs-cover.jpg'
     alt: 'Copertina Documentazione festivalgiovaniappennino.it'
 layout: ../../layouts/Article.astro
 ---
@@ -25,7 +25,7 @@ Nel caso in cui non si disponga delle credenziali di accesso, è necessario un i
 
 Gli articoli sono disponibili nella _Collezione_ **Blog** (unica disponibile al momento della stesura di questa documentazione). 
 
-![Sezione Blog dentro NetlifyCMS](/img/projects/fgadocs/fga-1.png)
+![Interfaccia di DecapCMS](https://res.cloudinary.com/dcsr1ibs2/image/upload/c_scale,w_auto/dpr_auto/q_auto/f_auto/v1678547019/IamLucaM/projects/fgadocs/decapcms-interface.png "Interfacccia di DecapCMS")
 
 Cliccando sul tasto _New Blog_ è possibile creare un nuovo articolo, mentre cliccando su un articolo esistente è possibile modificarlo.
 
